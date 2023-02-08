@@ -1,11 +1,17 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Footer from '../Pages/Shared/Footer/Footer'
+import Navbar from '../Pages/Shared/Navbar/Navbar'
 
-function componentName() {
+function Main() {
     return (
-        <div>
-            
+        <div> 
+             <Navbar></Navbar>
+             <Outlet></Outlet>
+             <Footer></Footer>
+             
         </div>
     )
 }
 
-export default componentName
+export default Main;
